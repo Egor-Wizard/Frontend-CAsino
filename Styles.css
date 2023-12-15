@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    background-image: url('7129c2f5d704fa5869899b6d2f124ed4.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0; /* Виправлення замітки між віртуальними елементами body і html */
+    padding: 0; /* Заборона відступів по замовчуванню */
+    box-sizing: border-box; /* Врахування padding у визначенні ширини та висоти елементів */
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .game-link {
+        margin: 5px;
+    }
+}
+
+.game-link {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.game-link:hover {
+    transform: scale(1.1);
+}
+
+.game-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block; /* Вирівнювання картинки по центру в блоці */
+}
